@@ -34,8 +34,11 @@ if(quastion == 1){
 		if (sn <= 15){
 			switch (sn){
 				case sn:
-				alert(sn);
-				sn++;
+					alert(sn);
+					sn++;
+					break;
+				default:
+			    alert( 'Что-то подходящее по смыслу' );
 			}
 		switchNumber(sn);
 		}
@@ -72,7 +75,6 @@ if(quastion == 1){
 		return operation(arg1, arg2);
 	}
 	alert(mathOperation(10, 20, getPluse));
-
 }
 
 
