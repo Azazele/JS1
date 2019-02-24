@@ -1,4 +1,65 @@
-// Lesson 2
+// Lesson 3
+var question = prompt('Какое задание проверим? Введите число от 1 до 4');
+if(question == 1){
+	var i = 0;
+	while(i < 100){
+		i++;
+		console.log(i);
+	}
+} else if (question == 2){
+	// Доступные товары
+	var goods = [{name:'good1', price:250}, {name:'good2', price:150}, {name:'good3', price:425}, {name:'good4', price:799}, {name:'good5', price:635}, {name:'good6', price:599}, {name:'good7', price:361}, {name:'good8', price:74}];
+
+	function getRandomInt(min,max) {
+		return Math.floor(Math.random() * (max - min +1)) + min;
+	}
+	// Загоняем рандомное указанное количество товаров в корзину
+	function pushToBasket(numOfGoods){
+		var basket = [];
+		for(var i = 0; basket.length < numOfGoods; i++){
+			var rand = getRandomInt(0,(goods.length-1))
+				if (!basket.includes(goods[rand])) { //исключаем уже добавленные товары
+					basket.push(goods[rand]);
+				}
+		}
+		console.log("Ваши товары:");
+		console.log(basket);
+		return basket;
+
+	}
+	// Считаем общую сумму корзины
+	function countBasketPrice(array){
+		var count = 0;
+		for (var i = 0; i < array.length; i++){
+			count = count + array[i].price;
+		}
+		return count;
+	}
+
+	function work(){
+		console.log("В корзине товаров на сумму: " + countBasketPrice(pushToBasket(3)) + " RUB");
+	}
+
+	work();
+} else if (question == 3){
+	for(var i = 1; i <= 100; console.log(i++)){}
+} else if (question == 4){
+		var x = 'x'
+		console.log(x);
+	for (i = 0; i < 19; i++){
+		x = x + 'x';
+		console.log(x);
+	}
+}
+
+
+
+
+
+
+
+
+/*// Lesson 2
 var quastion = prompt('Какое задание проверим? Введите число от 1 до 3');
 
 if(quastion == 1){
@@ -76,28 +137,6 @@ if(quastion == 1){
 	}
 	alert(mathOperation(10, 20, getPluse));
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
