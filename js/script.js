@@ -1,4 +1,35 @@
-// Lesson 3
+// Lesson 4
+var question = prompt('Какое задание проверим? Введите число от 1 до 2');
+
+if(question == 1){
+	//Преобразование полученных чисел в объект
+	function getRandomInt(min,max) {
+		return Math.floor(Math.random() * (max - min +1)) + min;
+	}
+
+	function numsToObj(){
+		var randnums = getRandomInt(100,1500).toString().split("");
+		console.log ("Полученные числа: " + randnums.join(''));
+		var nums = {hundred: 0, ten: 0, one: 0};
+		if(randnums.length == 3){
+			nums.hundred = randnums[0];
+			nums.ten = randnums[1];
+			nums.one = randnums[2];
+		} else {
+			return console.log({});
+		}
+		return console.log(nums);
+	}
+
+	numsToObj();
+
+} else if (question == 2){
+	// Обновление для игры, котору писали на уроке. Доступен вывод информации о коде
+	alert("В репрозории создана папка game-mover, в ней находится видоизмененная игра по ДЗ. Был создан отдельно файл statistic.js и объект statistic в нём. Данный объект отвечает за сохранение данных о ходах и выводе этих данных по запросу игрока.");
+	window.location.href = "./game-mover/walking.html";
+} 
+
+/*// Lesson 3
 var question = prompt('Какое задание проверим? Введите число от 1 до 4');
 if(question == 1){
 	var i = 0;
@@ -52,14 +83,7 @@ if(question == 1){
 	}
 }
 
-
-
-
-
-
-
-
-/*// Lesson 2
+// Lesson 2
 var quastion = prompt('Какое задание проверим? Введите число от 1 до 3');
 
 if(quastion == 1){
