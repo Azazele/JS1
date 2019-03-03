@@ -1,4 +1,13 @@
-// Lesson 4
+// Lesson 5
+
+// Генерация шахматной доски
+alert("В репрозории создана папка chess, в ней находится скрипт генерации шахмотной доски. /chess/index.html");
+
+// Проверка поля
+alert("В репрозории создана папка form-req, в ней находится форма по ДЗ и скрипт для её валидации. /form-req/index.html");
+
+
+/*// Lesson 4
 var question = prompt('Какое задание проверим? Введите число от 1 до 2');
 
 if(question == 1){
@@ -29,7 +38,7 @@ if(question == 1){
 	window.location.href = "./game-mover/walking.html";
 } 
 
-/*// Lesson 3
+// Lesson 3
 var question = prompt('Какое задание проверим? Введите число от 1 до 4');
 if(question == 1){
 	var i = 0;
