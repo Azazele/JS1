@@ -1,0 +1,15 @@
+.container{
+	width: 900px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.goods{
+	display: flex;
+	flex-wrap: wrap;
+}
+.good{
+	margin: 50px;
+}
+.good div{
+	margin: 5px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма и валидация</title>
+	
+	<link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+<form action="/" id="reg-form">
+	<label for="name">Ваше Имя</label>
+	<input type="text" name="name" id="name" placeholder="Владимир Маяковский">
+	<div class="eror" id="eror-div-name"></div>
+	<label for="e-mail">Ваш e-mail</label>
+	<input type="text" name="e-mail" id="mail" placeholder="vladimir@mayakovskiy.ru">
+	<div class="eror" id="eror-div-mail"></div>
+	<button type="submit">Отправить</button>
+</form>
+
+<script src='./js/script.js'></script>
+</body>
+
+</html>
